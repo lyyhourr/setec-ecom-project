@@ -109,7 +109,7 @@ export default function LandingPage() {
                       <Search className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>
-                  <Link href="/">
+                  <Link href="/post-job">
                     <Button
                       variant="outline"
                       size="lg"
@@ -645,10 +645,12 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button size="lg" className="">
-                  <Briefcase className="mr-2 h-4 w-4" />
-                  Post Your First Job
-                </Button>
+                <Link href="/post-job">
+                  <Button size="lg" className="">
+                    <Briefcase className="mr-2 h-4 w-4" />
+                    Post Your First Job
+                  </Button>
+                </Link>
                 <Link href="/jobs">
                   <Button size="lg" variant="secondary">
                     <Search className="mr-2 h-4 w-4" />
