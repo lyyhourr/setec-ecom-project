@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -7,18 +7,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { MapPin, Briefcase, DollarSign, CheckCircle } from "lucide-react";
+import { Briefcase, CheckCircle, DollarSign, MapPin } from "lucide-react";
+import Link from "next/link";
 
-export default async function JobDetailPage({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
-  const { id } = await params;
-
+export default async function JobDetailPage() {
   const job = {
-    id: id,
+    id: 1,
     title: "Senior Software Engineer (Full-stack)",
     company: "Tech Solutions Inc.",
     location: "San Francisco, CA (Hybrid)",
@@ -62,18 +56,9 @@ export default async function JobDetailPage({
     ],
   };
 
-  if (!job) {
-    return (
-      <div className="flex min-h-[calc(100vh-4rem)] items-center justify-center">
-        <p>Job not found.</p>
-      </div>
-    );
-  }
-
   return (
     <div className="container mx-auto px-4 py-8 md:px-6 lg:py-12">
       <div className="grid gap-8 lg:grid-cols-[2fr_1fr]">
-        {/* Main Job Details */}
         <div className="space-y-6">
           <Card className="p-4 md:p-6">
             <CardHeader className="pb-4">
@@ -151,7 +136,6 @@ export default async function JobDetailPage({
           </Card>
         </div>
 
-        {/* Sidebar for Apply Button and Benefits */}
         <div className="space-y-6">
           <Card className="p-4 md:p-6">
             <CardContent className="p-0">
