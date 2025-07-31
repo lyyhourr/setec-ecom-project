@@ -62,16 +62,20 @@ export default function LandingPage() {
           </nav>
           <div className="flex gap-2">
             <ToggleThemeMode />
-            <Button
-              variant="ghost"
-              size="sm"
-              className="dark:text-gray-300 dark:hover:text-white"
-            >
-              Sign In
-            </Button>
-            <Button size="sm" className="bg-primary hover:bg-primary/90">
-              Get Started
-            </Button>
+            <Link href="/login">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="dark:text-gray-300 dark:hover:text-white"
+              >
+                Sign In
+              </Button>
+            </Link>
+            <Link href="/register">
+              <Button size="sm" className="bg-primary hover:bg-primary/90">
+                Get Started
+              </Button>
+            </Link>
           </div>
         </div>
       </header>
