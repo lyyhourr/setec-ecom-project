@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -10,11 +10,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Checkbox } from "@/components/ui/checkbox";
 import {
   Select,
   SelectContent,
@@ -23,15 +22,10 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
-import {
-  ArrowLeft,
-  CreditCard,
-  Shield,
-  CheckCircle,
-  Briefcase,
-} from "lucide-react";
+import { CheckCircle, CreditCard, Shield } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 const plans = {
   "per-post": {
@@ -113,28 +107,10 @@ export default function CheckoutPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="bg-white border-b">
-        <div className="container mx-auto px-4 md:px-6 max-w-7xl">
-          <div className="flex items-center justify-between h-16">
-            <Link href="/" className="flex items-center gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              <Briefcase className="h-6 w-6 text-primary" />
-              <span className="text-lg font-bold">JOB HZ</span>
-            </Link>
-            <div className="flex items-center gap-2">
-              <Shield className="h-4 w-4 text-green-600" />
-              <span className="text-sm text-gray-600">Secure Checkout</span>
-            </div>
-          </div>
-        </div>
-      </header>
-
+    <div className="min-h-screen ">
       <div className="container mx-auto px-4 md:px-6 max-w-7xl py-8">
         <div className="grid gap-8 lg:grid-cols-3">
-          {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Plan Selection */}
             <Card>
               <CardHeader>
                 <CardTitle>Select Your Plan</CardTitle>

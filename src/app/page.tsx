@@ -355,12 +355,14 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Button
-                    className="w-full bg-transparent dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
-                    variant="outline"
-                  >
-                    Post a Job
-                  </Button>
+                  <Link href="/post-job">
+                    <Button
+                      className="w-full bg-transparent dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+                      variant="outline"
+                    >
+                      Post a Job
+                    </Button>
+                  </Link>
                 </CardFooter>
               </Card>
 
@@ -426,9 +428,11 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full bg-primary hover:bg-primary/90">
-                    Start Monthly Plan
-                  </Button>
+                  <Link href="/checkout">
+                    <Button className="w-full bg-primary hover:bg-primary/90">
+                      Start Monthly Plan
+                    </Button>
+                  </Link>
                 </CardFooter>
               </Card>
 
@@ -500,12 +504,14 @@ export default function LandingPage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Button
-                    className="w-full bg-transparent dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
-                    variant="outline"
-                  >
-                    Start Yearly Plan
-                  </Button>
+                  <Link href="/checkout">
+                    <Button
+                      className="w-full bg-transparent dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
+                      variant="outline"
+                    >
+                      Start Yearly Plan
+                    </Button>
+                  </Link>
                 </CardFooter>
               </Card>
             </div>
@@ -515,14 +521,16 @@ export default function LandingPage() {
                 Browse jobs, apply to positions, and connect with employers at
                 no cost.
               </p>
-              <Button
-                variant="outline"
-                size="lg"
-                className="dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800 bg-transparent"
-              >
-                <Users className="mr-2 h-4 w-4" />
-                Join as Job Seeker - Free Forever
-              </Button>
+              <Link href="/register">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800 bg-transparent"
+                >
+                  <Users className="mr-2 h-4 w-4" />
+                  Join as Job Seeker - Free Forever
+                </Button>
+              </Link>
             </div>
           </div>
         </section>

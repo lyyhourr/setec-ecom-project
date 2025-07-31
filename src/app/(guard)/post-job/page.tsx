@@ -126,7 +126,7 @@ export default function PostJobPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-4 py-4">
+      <header className=" px-4 py-4">
         <div className="container mx-auto max-w-4xl">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
@@ -135,10 +135,8 @@ export default function PostJobPage() {
                 className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-primary"
               >
                 <ArrowLeft className="h-4 w-4" />
-                Back to Home
               </Link>
               <div className="flex items-center gap-2">
-                <Briefcase className="h-6 w-6 text-primary" />
                 <span className="text-xl font-bold text-gray-900 dark:text-white">
                   Post a Job
                 </span>

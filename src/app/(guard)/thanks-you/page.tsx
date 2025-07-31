@@ -52,18 +52,14 @@ export default function ThankYouPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-
       <div className="container mx-auto px-4 md:px-6 max-w-4xl py-12">
         <div className="text-center space-y-8">
-          {/* Success Icon */}
           <div className="flex justify-center">
             <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center">
               <CheckCircle className="w-12 h-12 text-green-600" />
             </div>
           </div>
 
-          {/* Thank You Message */}
           <div className="space-y-4">
             <h1 className="text-4xl font-bold text-gray-900">
               Thank You for Your Purchase!
@@ -75,7 +71,6 @@ export default function ThankYouPage() {
             </p>
           </div>
 
-          {/* Order Details Card */}
           <Card className="max-w-2xl mx-auto text-left">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -87,7 +82,6 @@ export default function ThankYouPage() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
-              {/* Order Info */}
               <div className="grid gap-4 md:grid-cols-2">
                 <div>
                   <p className="text-sm font-medium text-gray-500">Order ID</p>
@@ -101,7 +95,6 @@ export default function ThankYouPage() {
 
               <Separator />
 
-              {/* Plan Details */}
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <div>
@@ -144,7 +137,6 @@ export default function ThankYouPage() {
             </CardContent>
           </Card>
 
-          {/* Next Steps */}
           <Card className="max-w-2xl mx-auto text-left">
             <CardHeader>
               <CardTitle>What&apos;s Next?</CardTitle>
@@ -194,7 +186,6 @@ export default function ThankYouPage() {
             </CardContent>
           </Card>
 
-          {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild
@@ -207,14 +198,13 @@ export default function ThankYouPage() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="/dashboard">
+              <Link href="">
                 <Briefcase className="mr-2 h-4 w-4" />
                 Go to Dashboard
               </Link>
             </Button>
           </div>
 
-          {/* Support Info */}
           <div className="bg-gray-100 rounded-lg p-6 max-w-2xl mx-auto">
             <div className="flex items-center justify-center gap-2 mb-3">
               <Mail className="h-5 w-5 text-gray-600" />
